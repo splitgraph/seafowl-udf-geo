@@ -1,5 +1,5 @@
 [package]
-name = "seafowl-udf-rust"
+name = "seafowl-udf-geo"
 version = "0.0.1"
 edition = "2021"
 
@@ -11,6 +11,7 @@ serde = { version = "1.0.145", features = ["derive"] }
 rmp = "0.8.11"
 rmp-serde = "1.1.1"
 rmpv = { version= "1.0.0", features = ["with-serde"]}
+geoutils = "0.5.1"
 
 [lib]
 crate-type = ['cdylib']

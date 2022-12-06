@@ -9,11 +9,11 @@ joinByString() {
 }
 
 # Parameters to set
-filename="target/wasm32-wasi/release/seafowl_udf_rust.wasm"
-function_name="add_i64"
-wasm_export="add_i64"
-return_type="BIGINT"
-input_types=("BIGINT" "BIGINT")
+filename="target/wasm32-wasi/release/seafowl_udf_geo.wasm"
+function_name="distance"
+wasm_export="distance"
+return_type="DOUBLE"
+input_types=("DOUBLE" "DOUBLE" "DOUBLE" "DOUBLE")
 host="localhost:8080"
 
 curl -i -H "Content-Type: application/json" $host/q -d@- <<EndOfMessage
